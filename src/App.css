@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  width: 100%;
+}
+
+/* ==================Side Navbar================== */
+
+#nav-div {
+  position: fixed;
+  background-color: #343a40;
+  height: 100%;
+  width: 17.9%;
+  text-align: center;
+  z-index: 10;
+}
+
+#header {
+  display: none;
+}
+
+#profilePic {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: 0.6rem solid #5d6166;
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navbar-links {
+  color: #9a9da0;
+  font-weight: 800;
+}
+
+.navbar-links:hover {
+  color: rgb(255 255 255 / 75%);
+}
+
+
+.mobile-navbar-btn {
+  display: none;
+  cursor: pointer;
+  background-color: #343a40;
+  border: none;
+}
+
+.mobile-nav-icon {
+  font-size: 2rem;
+  border: 2px solid #5d6166;
+  padding: 0.3rem;
+  color: #5d6166;
+}
+
+/* ==================Parent div of all sections================== */
+
+#main-div {
+  position: absolute;
+  /* border: 5px solid rgb(128, 0, 255); */
+  left: 17.9%;
+  width: 82.1%;
+}
+
+/* ==================About Section================== */
+
+#about {
+  padding: 3rem;
+  width: 100%;
+}
+
+#name {
+  font-size: 6rem;
+  color: #343a40;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 700;
+}
+
+#email,
+#address {
+  font-size: 24px;
+  color: #343a40;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 500;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+}
+
+#address {
+  color: #6c757d;
+}
+
+#aboutPara {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #6c757d;
+  line-height: 38px;
+  margin-bottom: 3rem;
+}
+
+#resume-link {
+  color: #343a40;
+  ;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* ==================Education Section================== */
+
+#education-sec {
+  /* border: 5px solid blue; */
+  width: 169vh;
+  padding: 3rem;
+  width: 100%;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #343a40;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.university-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343a40;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  margin-top: 3rem;
+}
+
+.city,
+.course-name,
+.course-info {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #6c757d;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  margin-top: -9px;
+  letter-spacing: 1px;
+}
+
+.course-name {
+  margin-top: 0px;
+}
+
+.city {
+  font-size: 1.3rem;
+}
+
+.course-info {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 1px;
+  letter-spacing: 2px;
+}
+
+.ekeeda-date,
+.msc-date,
+.bsc-date {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #343a40;
+  margin-left: 60%;
+}
+
+.msc-date {
+  margin-left: 49.5%;
+}
+
+.bsc-date {
+  margin-left: 49.6%;
+}
+
+.ekeeda-dates,
+.msc-dates,
+.bsc-dates {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #343a40;
+  margin-top: 10px;
+  display: none;
+}
+
+/* ==================Project Section================== */
+
+#projects-sec {
+  /* border: 5px solid yellow; */
+  padding: 3rem;
+  width: 100%;
+}
+
+.project-link {
+  display: inline-block;
+  color: #343a40;
+  font-size: 2rem;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+.used-elements {
+  color: #6c757d;
+  font-size: 1.3rem;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 500;
+  margin-top: -9px;
+  letter-spacing: 2px;
+}
+
+.project-details {
+  color: #6c757d;
+  margin-top: 12px;
+}
+
+.git-img {
+  height: 3rem;
+  width: 3rem;
+  margin-top: 20px;
+  display: block;
+}
+
+/* ==================Skills Section================== */
+
+#skills-sec {
+  /* border: 5px solid violet; */
+  padding: 3rem;
+  width: 100%;
+}
+
+.skill-heading {
+  color: #343a40;
+  font-size: 2rem;
+  margin-top: 3rem;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 700;
+}
+
+.skills {
+  color: #6c757d;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  margin-top: -9px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+/* ==================Media Queries================== */
+
+@media screen and (max-width: 1314px) {
+
+  .ekeeda-date {
+      margin-left: 45%;
+  }
+
+  .msc-date {
+      margin-left: 34.5%;
+  }
+
+  .bsc-date {
+      margin-left: 34.6%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body {
+      text-align: center;
+  }
+
+  #about,
+  #education-sec,
+  #projects-sec,
+  #skills-sec {
+      padding: 10px;
+  }
+
+  #aboutPara {
+      text-align: justify;
+  }
+
+  .mobile-navbar-btn {
+      display: inline-block;
+      z-index: 100;
+  }
+
+  #nav-div {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  #header {
+      display: inline-block;
+      color: white;
+      font-size: 1.25rem;
+      margin: auto 0.7rem;
+      opacity: 5;
+  }
+
+  #profilePic {
+      display: none;
+  }
+
+  #nav-div {
+      height: 4rem;
+      width: 100%;
+  }
+
+  .mobile-nav-icon {
+      margin: 0.6rem;
+  }
+
+  .navbar {
+      text-align: left;
+      position: absolute;
+      top: 3.9rem;
+      height: 13rem;
+      background-color: #343a40;
+      width: 100vw;
+      transform: translateY(-130%);
+      transition: all .3s linear;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+  }
+
+  .navbar-list {
+      margin-left: 0.7rem;
+  }
+
+  .mobile {
+      transform: translateY(0%);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+  }
+
+  #main-div {
+      width: 100%;
+      left: 0;
+      top: 4rem;
+  }
+
+  .git-img {
+      margin: 20px auto 0 auto;
+  }
+  
+
+  .ekeeda-dates,
+  .msc-dates,
+  .bsc-dates {
+      display: block;
+  }
+
+  .ekeeda-date,
+  .msc-date,
+  .bsc-date {
+      display: none;
+  }
+}
